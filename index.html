@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FajarDev Studio — Solusi Digital Premium untuk Bisnis Modern. Web Development, Digital Marketing, dan UI/UX Design." />
+  <title>FajarDev Studio — Digital Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Sora (display geometric) + Instrument Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+            <path d="M8 10h10l-4 6h8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 22l12-12" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                <stop offset="0%" stop-color="#4F46E5"/>
+                <stop offset="100%" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">FajarDev<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"        class="nav-link">Tentang</a></li>
+        <li><a href="#services"     class="nav-link">Layanan</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+        <li><a href="#contact"      class="nav-link">Kontak</a></li>
+        <li><a href="#contact"      class="nav-link nav-btn">Mulai Sekarang →</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-hamburger" id="hamburger" aria-label="Buka menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6"  x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6"  y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="nav-drawer" id="navDrawer">
+      <ul class="drawer-links">
+        <li><a href="#about"        class="drawer-link">Tentang Kami</a></li>
+        <li><a href="#services"     class="drawer-link">Layanan</a></li>
+        <li><a href="#testimonials" class="drawer-link">Testimoni</a></li>
+        <li><a href="#contact"      class="drawer-link">Kontak</a></li>
+        <li><a href="#contact"      class="drawer-link drawer-cta">Mulai Sekarang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- =====================================================
+       HERO SECTION
+  ====================================================== -->
+  <section class="hero" id="home">
+
+    <!-- Decorative noise / mesh background -->
+    <div class="hero-mesh"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="container hero-container">
+
+      <!-- Badge -->
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Bisnis Digital &amp; Latihan Web Development
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero-headline fade-up">
+        Solusi Digital<br />
+        <span class="headline-gradient">Premium</span><br />
+        untuk Bisnis Anda
+      </h1>
+
+      <!-- Sub-headline -->
+      <p class="hero-sub fade-up">
+        FajarDev Studio hadir sebagai mitra transformasi digital Anda —
+        menggabungkan kreativitas desain, teknologi mutakhir, dan strategi
+        pemasaran untuk mendorong pertumbuhan bisnis yang nyata.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-ctas fade-up">
+        <a href="#contact"  class="cta-primary">
+          Mulai Sekarang
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="cta-secondary">Lihat Layanan</a>
+      </div>
+
+      <!-- Trust Metrics -->
+      <div class="hero-metrics fade-up">
+        <div class="metric">
+          <strong>20+</strong>
+          <span>Proyek Selesai</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <strong>15+</strong>
+          <span>Klien Puas</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <strong>3+</strong>
+          <span>Tahun Pengalaman</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <strong>100%</strong>
+          <span>Komitmen Kualitas</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Floating Visual Card -->
+    <div class="hero-visual fade-up">
+      <div class="visual-card vc-main">
+        <div class="vc-header">
+          <div class="vc-dots"><span></span><span></span><span></span></div>
+          <span class="vc-title">Project Overview</span>
+        </div>
+        <div class="vc-body">
+          <div class="vc-bar" style="--w:90%"><span>Web Dev</span><em>90%</em></div>
+          <div class="vc-bar" style="--w:78%"><span>UI/UX</span><em>78%</em></div>
+          <div class="vc-bar" style="--w:65%"><span>Marketing</span><em>65%</em></div>
+        </div>
+      </div>
+      <div class="visual-card vc-badge badge-success">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        Proyek Selesai!
+      </div>
+      <div class="visual-card vc-badge badge-info">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+        +5 Klien Baru
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT / TENTANG KAMI
+  ====================================================== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+
+      <div class="about-layout">
+
+        <!-- Left: Visual -->
+        <div class="about-left reveal">
+          <div class="about-image-wrap">
+            <div class="about-img-box">
+              <div class="about-initials">FYB</div>
+              <div class="about-img-glow"></div>
+            </div>
+            <div class="about-card-stat">
+              <strong>Fajar Yoga Borneo</strong>
+              <span>Founder &amp; Lead Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="about-right">
+          <p class="section-label reveal">Tentang Kami</p>
+          <h2 class="section-title reveal">
+            Membangun Masa Depan<br />Digital Bersama Anda
+          </h2>
+          <p class="about-body reveal">
+            <strong>FajarDev Studio</strong> didirikan oleh <strong>Fajar Yoga Borneo</strong>
+            sebagai wujud nyata dari passion di bidang web development dan desain digital.
+            Studio ini sekaligus menjadi ruang latihan intensif untuk mengasah skill
+            dan menghadirkan solusi nyata bagi pelaku bisnis.
+          </p>
+          <p class="about-body reveal">
+            Kami percaya bahwa setiap bisnis berhak mendapatkan kehadiran digital yang kuat —
+            dari website yang memukau hingga strategi marketing yang terukur.
+          </p>
+
+          <!-- Visi & Misi -->
+          <div class="visi-misi reveal">
+            <div class="vm-item">
+              <div class="vm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Visi</h4>
+                <p>Menjadi studio digital terpercaya yang mendorong pertumbuhan bisnis melalui teknologi dan inovasi.</p>
+              </div>
+            </div>
+            <div class="vm-item">
+              <div class="vm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Misi</h4>
+                <p>Menghadirkan solusi digital berkualitas tinggi dengan pendekatan personal, harga transparan, dan hasil terukur.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="cta-primary reveal" style="display:inline-flex; margin-top:2rem;">
+            Hubungi Kami
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       SERVICES / LAYANAN
+  ====================================================== -->
+  <section class="services section-pad" id="services">
+    <div class="services-bg"></div>
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label reveal">Layanan Kami</p>
+        <h2 class="section-title centered reveal">
+          Apa yang Bisa Kami<br />Lakukan untuk Anda?
+        </h2>
+        <p class="section-desc reveal">
+          Rangkaian layanan terintegrasi dirancang untuk membantu bisnis Anda
+          tumbuh di era digital yang kompetitif.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1: Web Development -->
+        <div class="svc-card reveal">
+          <div class="svc-icon-wrap" style="--accent:#4F46E5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/><path d="M12 2v20" stroke-dasharray="3 3" opacity=".4"/>
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Membangun website responsif, cepat, dan SEO-friendly yang mencerminkan profesionalisme brand Anda. Dari landing page hingga sistem web kompleks.</p>
+          <ul class="svc-features">
+            <li>Landing Page &amp; Company Profile</li>
+            <li>E-Commerce &amp; Toko Online</li>
+            <li>Optimasi Performa &amp; SEO</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tag">HTML · CSS · JS</span>
+            <a href="#contact" class="svc-link">Konsultasi →</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Digital Marketing -->
+        <div class="svc-card svc-featured reveal">
+          <div class="svc-badge-featured">Terpopuler</div>
+          <div class="svc-icon-wrap" style="--accent:#06B6D4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="M13 13l6 6" opacity=".4"/>
+            </svg>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Strategi pemasaran digital end-to-end untuk meningkatkan jangkauan, brand awareness, dan konversi bisnis Anda secara signifikan.</p>
+          <ul class="svc-features">
+            <li>Social Media Management</li>
+            <li>Google &amp; Meta Ads</li>
+            <li>Content Strategy &amp; Copywriting</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tag">Growth · Ads · Content</span>
+            <a href="#contact" class="svc-link">Konsultasi →</a>
+          </div>
+        </div>
+
+        <!-- Card 3: UI/UX Design -->
+        <div class="svc-card reveal">
+          <div class="svc-icon-wrap" style="--accent:#8B5CF6">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/>
+              <rect x="3" y="13" width="8" height="8" rx="1"/><circle cx="17" cy="17" r="4"/>
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Merancang antarmuka yang intuitif, indah, dan berpusat pada pengalaman pengguna. Dari wireframe hingga prototype interaktif siap produksi.</p>
+          <ul class="svc-features">
+            <li>User Research &amp; Wireframing</li>
+            <li>Visual Design &amp; Branding</li>
+            <li>Prototype &amp; Design System</li>
+          </ul>
+          <div class="svc-footer">
+            <span class="svc-tag">Figma · Design · UX</span>
+            <a href="#contact" class="svc-link">Konsultasi →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       TESTIMONIALS
+  ====================================================== -->
+  <section class="testimonials section-pad" id="testimonials">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label reveal">Testimoni</p>
+        <h2 class="section-title centered reveal">
+          Dipercaya oleh Bisnis<br />yang Berkembang
+        </h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <!-- Testi 1 -->
+        <div class="testi-card reveal">
+          <div class="testi-rating">★★★★★</div>
+          <blockquote>
+            "FajarDev Studio mengubah website bisnis kami yang membosankan menjadi
+            tampilan yang sangat profesional dan modern. Traffic meningkat 3x lipat
+            dalam sebulan pertama!"
+          </blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" style="--c:#4F46E5">RA</div>
+            <div class="testi-info">
+              <strong>Rizky Andrianto</strong>
+              <span>CEO, Andrianto Group</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 2 (featured) -->
+        <div class="testi-card testi-highlight reveal">
+          <div class="testi-rating">★★★★★</div>
+          <blockquote>
+            "Tim FajarDev sangat responsif dan paham kebutuhan bisnis kami.
+            Landing page yang mereka buat berhasil meningkatkan konversi lead
+            sebesar 45%. Sangat direkomendasikan!"
+          </blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" style="--c:#06B6D4">SP</div>
+            <div class="testi-info">
+              <strong>Sari Pratiwi</strong>
+              <span>Marketing Director, BrightMind Co.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testi 3 -->
+        <div class="testi-card reveal">
+          <div class="testi-rating">★★★★★</div>
+          <blockquote>
+            "Hasil kerja FajarDev melampaui ekspektasi kami. Desain UI/UX app
+            mobile kami kini mendapat pujian dari pengguna. Profesional, tepat
+            waktu, dan harga sangat terjangkau!"
+          </blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar" style="--c:#8B5CF6">BH</div>
+            <div class="testi-info">
+              <strong>Bima Hartono</strong>
+              <span>Founder, TechVenture ID</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT / KONTAK
+  ====================================================== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+
+      <div class="contact-layout">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <p class="section-label reveal">Kontak</p>
+          <h2 class="section-title reveal">
+            Siap Memulai<br />Proyek Bersama?
+          </h2>
+          <p class="contact-body reveal">
+            Ceritakan kebutuhan bisnis Anda dan kami akan merespons
+            dalam waktu 1×24 jam. Konsultasi pertama <strong>gratis</strong>.
+          </p>
+
+          <!-- Contact Cards -->
+          <div class="contact-cards reveal">
+            <a href="mailto:fajar@fajardev.id" class="contact-card">
+              <div class="cc-icon" style="--c:#4F46E5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <span>Email</span>
+                <strong>fajar@fajardev.id</strong>
+              </div>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="contact-card">
+              <div class="cc-icon" style="--c:#25D366">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div>
+                <span>WhatsApp</span>
+                <strong>+62 812-3456-7890</strong>
+              </div>
+            </a>
+            <a href="https://github.com/fajaryogaborneo" target="_blank" rel="noopener" class="contact-card">
+              <div class="cc-icon" style="--c:#333">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <span>GitHub</span>
+                <strong>github.com/fajaryogaborneo</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-box reveal">
+          <div class="form-header">
+            <h3>Kirim Pesan</h3>
+            <p>Isi form di bawah ini dan kami akan segera menghubungi Anda.</p>
+          </div>
+          <form id="contactForm" novalidate>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label for="fname">Nama Lengkap <span>*</span></label>
+                <input type="text"  id="fname"  name="fname"  placeholder="Nama Anda" autocomplete="name" />
+                <span class="field-error" id="fnameErr"></span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label for="femail">Alamat Email <span>*</span></label>
+                <input type="email" id="femail" name="femail" placeholder="email@perusahaan.com" autocomplete="email" />
+                <span class="field-error" id="femailErr"></span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label for="fservice">Layanan yang Dibutuhkan</label>
+                <select id="fservice" name="fservice">
+                  <option value="">— Pilih Layanan —</option>
+                  <option value="web">Web Development</option>
+                  <option value="marketing">Digital Marketing</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="other">Lainnya</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label for="fmessage">Pesan <span>*</span></label>
+                <textarea id="fmessage" name="fmessage" rows="4" placeholder="Ceritakan kebutuhan proyek Anda..."></textarea>
+                <span class="field-error" id="fmessageErr"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit" id="formSubmit">
+              <span class="btn-text">Kirim Pesan</span>
+              <span class="btn-loader" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </span>
+            </button>
+
+            <div class="form-success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              Pesan terkirim! Kami akan menghubungi Anda dalam 1×24 jam.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <div class="brand-icon">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="url(#logoGrad2)"/>
+                <path d="M8 10h10l-4 6h8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 22l12-12" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                <defs>
+                  <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
+                    <stop offset="0%" stop-color="#4F46E5"/>
+                    <stop offset="100%" stop-color="#06B6D4"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="brand-name">FajarDev<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            Studio digital milik <strong>Fajar Yoga Borneo</strong> —
+            menghadirkan solusi web profesional sekaligus ruang pengembangan skill web development.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav columns -->
+        <div class="footer-col">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#contact">Konsultasi Gratis</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
+            <li><a href="#contact">Karir</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="mailto:fajar@fajardev.id">fajar@fajardev.id</a></li>
+            <li><a href="https://wa.me/6281234567890">+62 812-3456-7890</a></li>
+            <li><a href="#">github.com/fajaryogaborneo</a></li>
+            <li><span style="color:var(--text-muted)">Kalimantan, Indonesia</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2025 <strong>FajarDev Studio</strong>. Hak Cipta Dilindungi.</p>
+        <p class="footer-credit">
+          Dibuat dengan ❤ oleh <strong>Fajar Yoga Borneo</strong> — Proyek Latihan Web Development
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
